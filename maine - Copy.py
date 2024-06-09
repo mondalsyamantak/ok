@@ -283,7 +283,7 @@ class Quizwindow:
         
         self.get_questions()
         
-    def get_questions(self, amount=10, category=9, difficulty='easy'):
+    def get_questions(self, amount=10, category=31, difficulty='easy'):
         url = f"https://opentdb.com/api.php?amount={amount}&category={category}&difficulty={difficulty}&type=multiple"
         response = requests.get(url)
         data = response.json()
